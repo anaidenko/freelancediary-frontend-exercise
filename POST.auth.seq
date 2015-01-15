@@ -1,0 +1,29 @@
+title Freelance Diary Application authentication
+
+Client->+API: HTTP POST /auth
+note left of API
+Payload:
+{
+'applicationToken': [applicationToken]
+}
+end note
+
+alt JSON is not valid
+API->Client: HTTP 404
+end
+
+alt authorization header is not valid
+API->Client: HTTP 403
+end
+
+alt {applicationToken} is not valid
+API->Client: HTTP 403
+end
+
+API->-Client: HTTP 200
+note left of API:
+Payload:
+{
+'clientToken': [clientToken]
+}
+end note
