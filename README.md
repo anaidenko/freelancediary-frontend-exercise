@@ -1,5 +1,3 @@
-# freelancediary-frontend-exercise
-
 Freelance Diary front-end coding exercise 
 ===================
 
