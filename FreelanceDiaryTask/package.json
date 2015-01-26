@@ -1,0 +1,23 @@
+{
+  "name": "freelance-diary-exercise",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Freelance Diary front-end coding exercise by Andrii Naidenko",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "start": "start /D FreelanceDiaryTask http-server -a localhost -p 8000 -c-1",
+
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor FreelanceDiaryTask.Specs/protractor.conf.js"
+  }
+}

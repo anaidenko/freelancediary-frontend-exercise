@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="authApp">
+<head>
+    <title>Freelance Diary front-end coding exercise</title>
+    <meta name="author" content="Andrii Naidenko" />
+    <meta name="reply-to" content="Andrii.Naidenko@outlook.com" />
+    <script src="Scripts/angular.js" type="text/javascript"></script>
+    <script src="Scripts/angular-local-storage.js" type="text/javascript"></script>
+    <script src="Scripts/app/sha1.js" type="text/javascript"></script>
+    <script src="Scripts/app/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <div ng-controller="LoginController">
+        <button id="authBtn" type="button" ng-click="authenticate()">Send authentication request</button>
+        <p id="clientToken" ng-show="clientToken">Client Token: {{clientToken}}</p>
+    </div>
+</body>
+</html>

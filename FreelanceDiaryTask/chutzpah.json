@@ -1,0 +1,6 @@
+{
+    "Framework": "jasmine",
+    "RootReferencePathMode": "SettingsFileDirectory",
+    "TestHarnessLocationMode": "Custom",
+    "TestHarnessDirectory": "FreelanceDiaryTask.Tests/TestResults"
+}
